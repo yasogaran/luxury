@@ -1,0 +1,25 @@
+.footer{
+    background: #f5f2f2;
+    color: #000;
+}
+.footer-list{
+    margin-top: 5px;
+}
+.footer-list > li{
+    margin-top: 5px;
+}
+.footer-link{
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+}
+.footer-link:hover{
+    color: #ff2d16;
+}
+.text-red{
+    color: #ff2d16;
+}
+.footer-logo{
+    max-width: 300px;
+    height: auto;
+}

@@ -1,0 +1,121 @@
+:root {
+  --c1: #9d9d9d;
+  --c2: #ff2d16;
+  --c3: #f7f7f7;
+  --bg: #000;
+  --bg2: #fff;
+}
+
+.header-top {
+  background-color: var(--bg);
+}
+.header-mid {
+  background-color: var(--bg);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.brand-logo {
+  max-height: 70px;
+}
+.header-bottom {
+  background-color: var(--bg2);
+  padding: 5px 0px;
+}
+.header-bottom-content > button {
+  margin: 0px 10px;
+  background-color: transparent;
+  border: 0px;
+  color: black;
+}
+.header-bottom-content > button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-list > div {
+  margin: 0px 15px;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+}
+.header-link,
+.header-info {
+  color: var(--c3);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.header-link:hover,
+.header-info:hover {
+  color: var(--c2);
+}
+.header-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-top, .header-mid, .header-bottom{
+    display: none;
+  }
+  .header-mobile {
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+  }
+  .header-mobile > * {
+    transition: 0.2s;
+  }
+  .header-mobile-button-one{
+    width: auto;
+    margin:5px
+  }
+  .mobile-brand-logo{
+    max-height: 50px;
+  }
+  .mobile-search-box{
+    position: absolute;
+    top:50px;
+    padding: 10px 5px;
+    width: 100%;
+    z-index: 100;
+    background-color: #0000006b;
+    animation: 0.7s boxApper forwards;
+  }
+  .mobile-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    height: 100%;
+  }
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    list-style: none;
+    padding: 0;
+  }
+  .mobile-nav-item {
+    margin-top: 10px;
+    padding: 4px 2px;
+  }
+  .mobile-nav-item:hover {
+    background-color: #9d9d9d;
+    cursor: pointer;
+  }
+  .mobile-nav-link {
+    text-decoration: none;
+    color: var(--c3);
+  }
+}
+
+@keyframes boxApper{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity: 1;
+  }
+}
