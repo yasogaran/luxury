@@ -153,7 +153,7 @@ function ProductCard({ id, title, image, badges = [], price }) {
 
   function createBadge(badges) {
     if (badges.length == 0) {
-      throw "undefined";
+      throw new Error("undefined");
     }
     let a = [];
     badges.forEach((obj) => {
