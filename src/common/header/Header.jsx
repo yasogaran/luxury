@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Dropdown, Offcanvas, Button } from "react-bootstrap";
+import { Row,  Offcanvas, Button } from "react-bootstrap";
 import "./header.css";
 
 // IMAGES
@@ -160,7 +160,7 @@ function HeaderMobile() {
   // FOR SEARCH BOX
   const [showSearch, setShowSearch] = useState(false);
   const toggleSearch = () => {
-    setShowSearch(showSearch == true ? false : true);
+    setShowSearch(showSearch === true ? false : true);
   };
   return (
     <>
@@ -188,7 +188,7 @@ function HeaderMobile() {
         </Button>
       </div>
       <div className="col-12 bg-black">
-        {showSearch == true ? (
+        {showSearch === true ? (
           <Row className="align-items-center py-3 mobile-search-box">
             {" "}
             <SearchBox />{" "}

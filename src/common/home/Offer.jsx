@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Row, Button } from "react-bootstrap";
+import { Card, Row } from "react-bootstrap";
 import { Mydata } from "../../Data";
 
 const offerArr = Mydata.offerProduct;
